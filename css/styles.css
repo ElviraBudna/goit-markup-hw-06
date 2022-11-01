@@ -443,10 +443,7 @@ img {
 .container-footer {
   display: flex;
   align-items: baseline;
-}
-
-.container-address {
-  margin-right: 70px;
+  justify-content: space-between;
 }
 
 /*logo footer*/
@@ -472,6 +469,7 @@ img {
 
 .address-link-light {
   color: var(--white-color);
+  letter-spacing: 0.03em;
 }
 
 .address-list {
@@ -481,10 +479,6 @@ img {
 }
 
 /*social*/
-.social {
-  margin-right: 93px;
-}
-
 .title-social {
   margin-bottom: 20px;
 
@@ -528,6 +522,7 @@ img {
 .title-subscribe {
   margin-bottom: 20px;
 
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16/14);
   text-transform: uppercase;
@@ -536,7 +531,6 @@ img {
 
 .subscribe-container {
   display: flex;
-
 }
 
 .box-subscribe {
@@ -552,26 +546,15 @@ img {
   height: 50px;
   margin-right: 12px;
 
+  color: var(--white-color);
   background-color: transparent;
   outline: none;
 }
 
-.subscribe-label {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-
+.subscribe-input:placeholder-shown {
   font-size: 16px;
   line-height: calc(20/16);
   color: rgba(255, 255, 255, 0.6);
-
-  /* transition: transform 250ms var(--time-transition); */
-} 
-
-.subscribe-input:focus + .subscribe-label,
-.subscribe-input:not(:placeholder-shown) + .subscribe-label {
-  transform: translateY(30px);
 }
 
 .button-subscribe {
@@ -771,6 +754,7 @@ img {
   margin-bottom: 12px;
 
   font-size: 20px;
+  font-weight: 700;
   line-height: calc(23 / 20);
   text-align: center;
   color: var(--title-text-color);
@@ -841,6 +825,7 @@ img {
   left: 12px;
   transform: translateY(-50%);
   fill: currentColor;
+  pointer-events: none;
 
   transition: color 250ms var(--time-transition);
 }
@@ -875,11 +860,11 @@ img {
 
 .form-checkbox-control {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .checkbox-label {
-  padding-left: 23px;
-  margin-bottom: 30px;
+  padding-left: 35px;
   display: block;
 
   font-size: 14px;
@@ -890,7 +875,7 @@ img {
 .checkbox-box {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 12px;
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
